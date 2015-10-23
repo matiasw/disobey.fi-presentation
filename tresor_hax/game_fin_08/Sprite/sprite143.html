@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>sprite143</title>
+</head>
+<body>
+<canvas id="sprite143" width="419" height="59" style="border:2px solid #cccccc;"></canvas>
+<script src=".\sprite143\jaf.js"></script>
+<script>
+ST('sprite143', function(_f) {
+    _f.setFps(31);
+    _f.defaults.debug = false;
+    _f.loop = true;
+    // Create sprite: sprite139
+    var sprite139 = new movieclip('sprite139', 3, true);
+    var l0 = sprite139.layer('l0', 0);
+    l0.frameclip('t0', 0, 0, 1)
+    .shape('shape134', './sprite143/shape134.svg', 'svg', 0, 0, 1, 0)
+    .track('mx')
+    .key(0, [1, 0, 0, 1, 0, 0]);
+
+    l0.frameclip('t1', 1, 1, 1)
+    .shape('shape136', './sprite143/shape136.svg', 'svg', 0, 0, 1, 0)
+    .track('mx')
+    .key(1, [1, 0, 0, 1, 0, 0]);
+
+    l0.frameclip('t2', 2, 2, 1)
+    .shape('shape138', './sprite143/shape138.svg', 'svg', 0, 0, 1, 0)
+    .track('mx')
+    .key(2, [1, 0, 0, 1, 0, 0]);
+
+    var l1 = sprite139.layer('l1', 1);
+
+    // Create sprite: mm
+    var mm = new movieclip('mm', 1, true);
+    var l0 = mm.layer('l0', 0);
+    l0.frameclip('t0', 0, 0, 1)
+    .shape('shape132', './sprite143/shape132.svg', 'svg', 0, 0, 1, 0)
+    .track('mx')
+    .key(0, [1, 0, 0, 1, 0, 0]);
+
+    var l1 = mm.layer('l1', 1);
+    l1.frameclip('t0', 0, 0, 1)
+    .sprite('sprite139', sprite139)
+    .track('mx')
+    .key(0, [0.929993, 0, 0, 0.929993, 109, 3]);
+
+    var l2 = mm.layer('l2', 2);
+    l2.frameclip('t0', 0, 0, 1)
+    .shape('text141', './sprite143/text141.svg', 'svg', 0, 0, 1, 0)
+    .track('mx')
+    .key(0, [1, 0, 0, 1, 295, 23]);
+
+    var l3 = mm.layer('l3', 3);
+    l3.frameclip('t0', 0, 0, 1)
+    .shape('text142', './sprite143/text142.svg', 'svg', 0, 0, 1, 0)
+    .track('mx')
+    .key(0, [1, 0, 0, 1, -36, 22]);
+
+
+
+    _f.mc(mm);
+    _f.start();
+});
+</script>
+</body>
+</html>

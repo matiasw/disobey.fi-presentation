@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>sprite118</title>
+</head>
+<body>
+<canvas id="sprite118" width="39" height="36" style="border:2px solid #cccccc;"></canvas>
+<script src=".\sprite118\jaf.js"></script>
+<script>
+ST('sprite118', function(_f) {
+    _f.setFps(31);
+    _f.defaults.debug = false;
+    _f.loop = true;
+    // Create sprite: mm
+    var mm = new movieclip('mm', 4, true);
+    var l0 = mm.layer('l0', 0);
+    l0.frameclip('t0', 0, 0, 1)
+    .shape('shape114', './sprite118/shape114.svg', 'svg', 0, 0, 1, 0)
+    .track('mx')
+    .key(0, [1, 0, 0, 1, 17, 23]);
+
+    l0.frameclip('t1', 1, 1, 1)
+    .shape('shape115', './sprite118/shape115.svg', 'svg', 0, 0, 1, 0)
+    .track('mx')
+    .key(1, [1, 0, 0, 1, 17, 23]);
+
+    l0.frameclip('t2', 2, 2, 1)
+    .shape('shape116', './sprite118/shape116.svg', 'svg', 0, 0, 1, 0)
+    .track('mx')
+    .key(2, [1, 0, 0, 1, 17, 23]);
+
+    l0.frameclip('t3', 3, 3, 1)
+    .shape('shape117', './sprite118/shape117.svg', 'svg', 0, 0, 1, 0)
+    .track('mx')
+    .key(3, [1, 0, 0, 1, 17, 23]);
+
+    var l1 = mm.layer('l1', 1);
+
+
+    _f.mc(mm);
+    _f.start();
+});
+</script>
+</body>
+</html>

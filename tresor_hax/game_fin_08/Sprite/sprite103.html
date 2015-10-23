@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>sprite103</title>
+</head>
+<body>
+<canvas id="sprite103" width="63" height="20" style="border:2px solid #cccccc;"></canvas>
+<script src=".\sprite103\jaf.js"></script>
+<script>
+ST('sprite103', function(_f) {
+    _f.setFps(31);
+    _f.defaults.debug = false;
+    _f.loop = true;
+    // Create sprite: sprite102
+    var sprite102 = new movieclip('sprite102', 1, true);
+    var l0 = sprite102.layer('l0', 0);
+    l0.frameclip('t0', 0, 0, 1)
+    .shape('shape101', './sprite103/shape101.svg', 'svg', 0, 0, 1, 0)
+    .track('mx')
+    .key(0, [1, 0, 0, 1, 0, 0]);
+
+
+    // Create sprite: mm
+    var mm = new movieclip('mm', 12, true);
+    var l0 = mm.layer('l0', 0);
+    l0.frameclip('t0', 1, 10, 1)
+    .sprite('sprite102', sprite102)
+    .track('mx')
+    .key(1, [1, 0, 0, 1, 53, 10])
+    .key(10, [0.0999908, 0, 0, 0.0500031, 60, 10]);
+
+    var l1 = mm.layer('l1', 1);
+
+
+    _f.mc(mm);
+    _f.start();
+});
+</script>
+</body>
+</html>

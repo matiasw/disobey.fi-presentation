@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1"
+xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+width="550px" height="400px"
+xml:space="preserve">
+<g id="ShapeID_2444" transform="matrix(1, 0, 0, 1, 0, 0)" >
+ <clipPath  id="PathID4042_ClipPathURL" clip-rule="nonzero">
+<path d="M424 541.05L424 585.05L110 585.05L110 541.05L424 541.05M178.6 560.1L178.6 573.1L183.9 573.1L183.9 560.1L178.6 560.1"/>
+</clipPath>
+<path 
+style="clip-path:url(#PathID4042_ClipPathURL);fill:#000000;fill-opacity:1" d="M424 541.05L424 585.05L110 585.05L110 541.05L424 541.05" />
+<path 
+style="fill:#000000;fill-opacity:1" d="M350.15 560.1L350.15 573.1L178.15 573.1L178.15 560.1L350.15 560.1" />
+</g>
+</svg>

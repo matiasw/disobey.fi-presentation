@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>sprite106</title>
+</head>
+<body>
+<canvas id="sprite106" width="116" height="55" style="border:2px solid #cccccc;"></canvas>
+<script src=".\sprite106\jaf.js"></script>
+<script>
+ST('sprite106', function(_f) {
+    _f.setFps(31);
+    _f.defaults.debug = false;
+    _f.loop = true;
+    // Create sprite: sprite102
+    var sprite102 = new movieclip('sprite102', 1, true);
+    var l0 = sprite102.layer('l0', 0);
+    l0.frameclip('t0', 0, 0, 1)
+    .shape('shape101', './sprite106/shape101.svg', 'svg', 0, 0, 1, 0)
+    .track('mx')
+    .key(0, [1, 0, 0, 1, 0, 0]);
+
+
+    // Create sprite: sprite103
+    var sprite103 = new movieclip('sprite103', 12, true);
+    var l0 = sprite103.layer('l0', 0);
+    l0.frameclip('t0', 1, 10, 1)
+    .sprite('sprite102', sprite102)
+    .track('mx')
+    .key(1, [1, 0, 0, 1, -10, 0])
+    .key(10, [0.0999908, 0, 0, 0.0500031, -3, 0]);
+
+    var l1 = sprite103.layer('l1', 1);
+
+    // Create sprite: sprite105
+    var sprite105 = new movieclip('sprite105', 1, true);
+    var l0 = sprite105.layer('l0', 0);
+    l0.frameclip('t0', 0, 0, 1)
+    .shape('text104', './sprite106/text104.svg', 'svg', 0, 0, 1, 0)
+    .track('mx')
+    .key(0, [1, 0, 0, 1, -72, -22]);
+
+
+    // Create sprite: mm
+    var mm = new movieclip('mm', 1, true);
+    var l0 = mm.layer('l0', 0);
+    l0.frameclip('t0', 0, 0, 1)
+    .sprite('sprite103', sprite103)
+    .track('mx')
+    .key(0, [1, 0, 0, 1, 63, 45]);
+
+    var l1 = mm.layer('l1', 1);
+    l1.frameclip('t0', 0, 0, 1)
+    .sprite('sprite105', sprite105)
+    .track('mx')
+    .key(0, [1, 0, 0, 1, 68, 16]);
+
+
+
+    _f.mc(mm);
+    _f.start();
+});
+</script>
+</body>
+</html>
