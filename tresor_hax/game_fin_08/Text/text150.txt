@@ -1,0 +1,1 @@
+﻿<p align="center"><font face="SF Digital Readout Pro" size="20" color="#000000" letterSpacing="0.000000" kerning="1">DIN RAKING ÄR NUMMER &lt;XX&gt; PÅ HIGHSCORE LISTAN.</font></p>

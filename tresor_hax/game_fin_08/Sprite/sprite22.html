@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>sprite22</title>
+</head>
+<body>
+<canvas id="sprite22" width="106" height="48" style="border:2px solid #cccccc;"></canvas>
+<script src=".\sprite22\jaf.js"></script>
+<script>
+ST('sprite22', function(_f) {
+    _f.setFps(31);
+    _f.defaults.debug = false;
+    _f.loop = true;
+    // Create sprite: sprite21
+    var sprite21 = new movieclip('sprite21', 1, true);
+    var l0 = sprite21.layer('l0', 0);
+    l0.frameclip('t0', 0, 0, 1)
+    .shape('text20', './sprite22/text20.svg', 'svg', 0, 0, 1, 0)
+    .track('mx')
+    .key(0, [1, 0, 0, 1, -50, -22]);
+
+
+    // Create sprite: mm
+    var mm = new movieclip('mm', 31, true);
+    var l0 = mm.layer('l0', 0);
+    l0.frameclip('t0', 0, 30, 1)
+    .sprite('sprite21', sprite21)
+    .track('mx')
+    .key(0, [1, 0, 0, 1, 54, 24])
+    .key(2, [1, 0, 0, 1, 52, 24])
+    .key(4, [1, 0, 0, 1, 52, 24])
+    .key(6, [1, 0, 0, 1, 52, 24])
+    .key(8, [1, 0, 0, 1, 52, 24])
+    .key(10, [1, 0, 0, 1, 52, 24])
+    .key(12, [1, 0, 0, 1, 52, 24])
+    .key(14, [1, 0, 0, 1, 52, 24])
+    .key(16, [1, 0, 0, 1, 52, 24])
+    .key(18, [1, 0, 0, 1, 52, 24])
+    .key(20, [1, 0, 0, 1, 52, 24])
+    .key(22, [1, 0, 0, 1, 52, 24])
+    .key(24, [1, 0, 0, 1, 52, 24])
+    .key(26, [1, 0, 0, 1, 52, 24])
+    .key(28, [1, 0, 0, 1, 52, 24])
+    .key(30, [1, 0, 0, 1, 52, 24]);
+
+    var l1 = mm.layer('l1', 1);
+
+
+    _f.mc(mm);
+    _f.start();
+});
+</script>
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>sprite120</title>
+</head>
+<body>
+<canvas id="sprite120" width="45" height="39" style="border:2px solid #cccccc;"></canvas>
+<script src=".\sprite120\jaf.js"></script>
+<script>
+ST('sprite120', function(_f) {
+    _f.setFps(31);
+    _f.defaults.debug = false;
+    _f.loop = true;
+    // Create sprite: sprite76
+    var sprite76 = new movieclip('sprite76', 1, true);
+    var l0 = sprite76.layer('l0', 0);
+
+    // Create sprite: sprite118
+    var sprite118 = new movieclip('sprite118', 4, true);
+    var l0 = sprite118.layer('l0', 0);
+    l0.frameclip('t0', 0, 0, 1)
+    .shape('shape114', './sprite120/shape114.svg', 'svg', 0, 0, 1, 0)
+    .track('mx')
+    .key(0, [1, 0, 0, 1, 0, 0]);
+
+    l0.frameclip('t1', 1, 1, 1)
+    .shape('shape115', './sprite120/shape115.svg', 'svg', 0, 0, 1, 0)
+    .track('mx')
+    .key(1, [1, 0, 0, 1, 0, 0]);
+
+    l0.frameclip('t2', 2, 2, 1)
+    .shape('shape116', './sprite120/shape116.svg', 'svg', 0, 0, 1, 0)
+    .track('mx')
+    .key(2, [1, 0, 0, 1, 0, 0]);
+
+    l0.frameclip('t3', 3, 3, 1)
+    .shape('shape117', './sprite120/shape117.svg', 'svg', 0, 0, 1, 0)
+    .track('mx')
+    .key(3, [1, 0, 0, 1, 0, 0]);
+
+    var l1 = sprite118.layer('l1', 1);
+
+    // Create sprite: sprite119
+    var sprite119 = new movieclip('sprite119', 120, true);
+    var l0 = sprite119.layer('l0', 0);
+    l0.frameclip('t0', 0, 119, 1)
+    .sprite('sprite118', sprite118)
+    .track('mx')
+    .key(0, [1, 0, 0, 1, -6, -3])
+    .key(107, [1, 0, 0, 1, -6, -3])
+    .key(119, [1, 0, 0, 1, -6, -3]);
+
+    var l1 = sprite119.layer('l1', 1);
+
+    // Create sprite: mm
+    var mm = new movieclip('mm', 1, true);
+    var l0 = mm.layer('l0', 0);
+    l0.frameclip('t0', 0, 0, 1)
+    .sprite('sprite76', sprite76)
+    .track('mx')
+    .key(0, [1, 0, 0, 1, 10, 30]);
+
+    var l1 = mm.layer('l1', 1);
+    l1.frameclip('t0', 0, 0, 1)
+    .sprite('sprite119', sprite119)
+    .track('mx')
+    .key(0, [1, 0, 0, 1, 23, 26]);
+
+    var l2 = mm.layer('l2', 2);
+
+
+    _f.mc(mm);
+    _f.start();
+});
+</script>
+</body>
+</html>

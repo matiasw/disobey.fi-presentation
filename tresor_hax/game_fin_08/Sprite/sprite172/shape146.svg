@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg version="1.1" id="Layer_1"
+xmlns="http://www.w3.org/2000/svg"
+xmlns:xlink="http://www.w3.org/1999/xlink"
+width="550px" height="400px"
+xml:space="preserve">
+<g id="ShapeID_2440" transform="matrix(1, 0, 0, 1, 0, 0)" >
+ <clipPath  id="PathID4035_ClipPathURL" clip-rule="nonzero">
+<path d="M468 651L65 651L65 542L65 138L468 138L468 542L468 651M65 651L468 651L468 542L65 542L65 651M65 138L65 542L468 542L468 138L65 138"/>
+</clipPath>
+<path 
+style="clip-path:url(#PathID4035_ClipPathURL);fill:#000000;fill-opacity:1" d="M468 651L65 651L65 542L65 138L468 138L468 542L468 651" />
+<path 
+style="fill:#000000;fill-opacity:1" d="M65 651L468 651L468 542L65 542L65 651" />
+<path 
+style="fill:#000000;fill-opacity:1" d="M65 138L65 542L468 542L468 138L65 138" />
+</g>
+</svg>
